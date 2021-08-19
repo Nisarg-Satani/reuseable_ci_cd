@@ -1,0 +1,40 @@
+
+h1 {
+  text-align: center;
+  background-color: beige;
+  margin-bottom: 7%;
+}
+form {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+label { padding : 0 10px; }
+
+.submit_btn { margin-left : 20px; color: black;font-weight: 600;padding: 4px 16px;background-color: beige;border-radius: 8px;border: 1px solid beige;box-shadow: 0 3px 10px rgba(0,0,0,0.2);}
+
+table { width : 100%; }
+.dataTables_wrapper {
+padding-top:17px;}
+
+
+h1 {
+  text-align: center;
+  background-color: beige;
+}
+form {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+label { padding : 0 10px; }
+
+.submit_btn { margin-left : 20px; color: black;font-weight: 600;padding: 4px 16px;background-color: beige;border-radius: 8px;border: 1px solid beige;box-shadow: 0 3px 10px rgba(0,0,0,0.2);}
+
+.container {
+  margin-top: 10%;
+}
+
+
