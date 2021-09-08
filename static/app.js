@@ -7,6 +7,7 @@ $('#submit_btn').click(function (e) {
             var formData = new FormData();
 			formData.append('Project_name',$('#Project_name').val());
 			formData.append('Authenticate', $('#Authenticate').val());
+            formData.append('w3review',$('#w3review').val());
 			formData.append('Git_Url', $('#Git_Url').val());
 			formData.append('Branch_Name',$('#Branch_Name').val());
             formData.append('username', $('#username').val());
@@ -21,15 +22,13 @@ $('#submit_btn').click(function (e) {
                 success: function (data) {
                     console.log("data", data);
                     if (data['status']==502){
-//                        alert(data['message'])
+                        alert(data['message'])
                           toastr.error(data['message']);
                     } else if (data['status']==200) {
                         toastr.success(data['message']);
                     }
                 }
             });
-            $('#myform')[0].reset();  // Reset all form data after submit
-        })
-
-});
+            $('#myform')[0];  // Reset all form data after submit
+        })});
 
