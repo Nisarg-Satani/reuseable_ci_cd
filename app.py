@@ -53,7 +53,7 @@ def submit():
        
         request_url = f"https://{username}:{token}@{url}"
         
-        parent_dir="/home/nisarg/var/projects"
+        parent_dir="F:/var/projects"
 
         path = os.path.join(parent_dir,Project_name)
         
@@ -62,7 +62,8 @@ def submit():
         if  os.path.exists(path):
             Repo.clone_from(request_url,path, branch=Branch_Name)
             os.system(f"{request_url}")
-            os.chdir('/home/nisarg/var/projects')
+            os.chdir('F:/var/projects')
+            os.chdir(Project_name)
             os.system(var1)
             # if os.path.isfile('filename.txt'):
             #     print ("File exist")
